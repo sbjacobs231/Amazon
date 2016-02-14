@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazon.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap-theme.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<script src="js/jquery-min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="owl/owl.carousel.css">
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="owl/owl.theme.css">
+	<!--  jQuery 1.7+  -->
+	<script src="owl/jquery-1.9.1.min.js"></script>
+	<!-- Include js plugin -->
+	<script src="owl/owl.carousel.js"></script>
+
+
+
+</head>
+<body>
+	<!--Top Image-->
+	<div class="topImg">
+		<img src="img/navImg.png">
+	</div>
+	<!--Top Half of Nav Section-->
+	<header id="navbar" role="navigation">
+		<div class="topHalfNav">
+			<img class="prime" src="img/amazonLogo.png">
+			<form>
+				<select class="searchCategory">
+					<option value="All">All Departments</option>
+					<option value="Amazon Video">Amazon Video</option>
+					<option value="Appliances">Appliances</option>
+					<option value="Apps and Games">Apps and Games</option>
+					<option value="Arts, Crafts, and Sewing">Arts, Crafts, and Sewing</option>
+					<option value="Automotive">Automotive</option>
+					<option value="Baby">Baby</option>
+					<option value="Beauty">Beauty</option>
+					<option value="Books">Books</option>
+				</select>
+				<input class="searchBar" type="text">
+				<input id="sherlock">
+				<span onmouseover="MFglass()" onmouseout="normalGlass()" class="search glyphicon glyphicon-search"></span>
+			</form>
+			<img class="gearUp" src="img/gearUp.png">
+		</div>
+		<!--Bottom Half of Navbar-->
+		<div id="toggle-bar">
+			<!-- First Item First Button -->
+			<div class="bot_margin mouseOn nav_btn1 btn-group">
+				<button class="nav_btn btn btn-primary btn-sm droptdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Shop by<br><b>Department</b><span class="caret"></span>
+				</button>
+				<ul id="dropdown-menu1" class="appear dropdown-menu">
+					<li><a href="#">AmazonVideo</a></li>
+					<li><a href="#">Digital & Prime Music</a></li>
+					<li><a href="#">App Store for Android</a></li>
+					<li><a href="#">Amazon Cloud Drive</a></li>
+					<li><a href="#">Kindle E-readers & Books</a></li>
+					<li><a href="#">Fire Tablets</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Books and Audible</a></li>
+					<li><a href="#">Movies, Music, and Games</a></li>
+					<li><a href="#">Electronics & Computers</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Handmade</a></li>
+					<li><a href="#">Home Services</a></li>
+					<li><a href="#">Credit & Payment Products</a></li>
+
+				</ul>
+			</div>
+			<!-- Bottom Nav Link -->
+			<a href="#" class="bot_margin nav_link nav_link1">Shopping History</a>
+			<a href="#" class="bot_margin nav_link nav_link2">Your Amazon.com</a>
+			<a href="#" class="bot_margin nav_link nav_link3">Today's Deals</a>
+			<a href="#" class="bot_margin nav_link nav_link4">Gift Cards</a>
+			<a href="#" class="bot_margin nav_link nav_link5">Sell</a>
+			<a href="#" class="bot_margin nav_link nav_link6">Help</a>
+
+			<!-- Bottom Nav Second Button -->
+			<div class="bot_margin mouseOn nav_btn2 btn-group">
+				<button class="nav_btn btn btn-primary btn-sm droptdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Hello. Sign in<br><b>Your Account</b> <span class="caret"></span>
+				</button>
+				<ul id="dropdown-menu2" class="appear dropdown-menu">
+					<button onclick="location.href='#'"id="sign_in">Sign In</button>
+					<p>New customer?<a href="#">Start here.</a></p>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Your Account</a></li>
+					<li><a href="#">Your Order</a></li>
+					<li><a href="#">Your List</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Manage Your Content & Devices</a></li>
+					<li><a href="#">Your Video Subscriptions</a></li>
+				</ul>
+			</div>
+			<!-- Bottom Nav Third Button -->
+			<div class="bot_margin nav_btn3 mouseOn btn-group">
+				<button class="nav_btn btn btn-primary btn-sm droptdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Try<br><b>Prime</b> <span class="caret"></span>
+				</button>
+				<ul id="dropdown-menu3" class="appear dropdown-menu">
+					<img src="img/tryPrime.png">
+				</ul>
+			</div>
+			<!-- Bottom Nav Fourth Button -->
+			<div class="bot_margin nav_btn4 mouseOn btn-group">
+				<button class="nav_btn btn btn-primary btn-sm droptdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Your<br><b>List</b> <span class="caret"></span>
+				</button>
+				<ul id="dropdown-menu4" class="appear dropdown-menu">
+					<li><a href="#">Create a List</a></li>
+					<li><a href="#">Find a List or Registry</a></li>
+					<li><a href="#">Find a Gift</a></li>
+					<li><a href="#">Wedding Registry</a></li>
+					<li><a href="#">Baby Registry</a></li>
+					<li><a href="#">Kids Birthdays</a></li>
+				</ul>
+			</div>
+			<!-- Shopping Cart -->
+			<div class="bot_margin btn-group">
+				<button class="cart glyphicon glyphicon-shopping-cart"></button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main Header -->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      	<img src="img/headers/Elder.png" class="wizard">
+	    </div>
+	    <div class="item">
+	      	<img src="img/headers/Nimbus.png" class="wizard">
+	    </div>
+	    <div class="item">
+	    	<img src="img/headers/dbz.jpg" class="wizard">
+	    </div>
+	  </div>
+
+	</div>
+
+	<!-- Bottom Border of Header -->
+	<div>
+		<img src="img/bottomBorder.png" class="hundo">
+	</div>
+
+	<!-- Carousels Section -->
+	<section>
+		<table>
+			<tr>
+				<td class="col-md-8">
+					<img src="img/siri-bag.jpg" class="td-img">
+					<img src="img/siri-box.jpg" class="td-img">
+				</td>
+				<td rowspan="4" class="gray col-md-4">
+					<img src="img/vader.jpg" class="center-img">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="col-md-8">
+				<!-- Bootstrap 3 Carousel Slider -->
+					<h3 class="td-carousel">PS4 Games</h3>
+					<div class="container">
+					    <div class="col-md-12">
+
+					        <div class="well">
+					            <div id="myCarousel" class="carousel slide" data-interval="false">
+					                
+					                <!-- Carousel items -->
+					                <div class="carousel-inner">
+					                    <div class="item active">
+					                        <div class="row">
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-1.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-2.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-3.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-4.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                        </div>
+					                        <!--/row-->
+					                    </div>
+					                    <!--/item-->
+					                    <div class="item">
+					                        <div class="row">
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-5.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-6.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-7.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-8.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                        </div>
+					                        <!--/row-->
+					                    </div>
+					                    <!--/item-->
+					                    <div class="item">
+					                        <div class="row">
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-9.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-10.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-11.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/ps4/ps4-12.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                        </div>
+					                        <!--/row-->
+					                    </div>
+					                    <!--/item-->
+					                </div>
+					                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+					                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+					            </div>
+					            <!--/myCarousel-->
+					        </div>
+					        <!--/well-->
+					    </div>
+					</div>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td class="col-md-8">
+					<img src="img/stories.jpg" class="td-img">
+					<img src="img/jucrew.jpg" class="td-img">
+				</td>
+			</tr>
+				<td class="col-md-8">
+					<!-- Bootstrap 3 Carousel Slider -->
+					<h3 class="td-carousel">Books</h3>
+					<div class="container">
+					    <div class="col-md-12">
+
+					        <div class="well">
+					            <div id="myCarousel1" class="carousel slide" data-interval="false">
+					                
+					                <!-- Carousel items -->
+					                <div class="carousel-inner">
+					                    <div class="item active">
+					                        <div class="row">
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book1.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book2.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book3.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book4.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                        </div>
+					                        <!--/row-->
+					                    </div>
+					                    <!--/item-->
+					                    <div class="item">
+					                        <div class="row">
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book5.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book6.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book7.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book8.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                        </div>
+					                        <!--/row-->
+					                    </div>
+					                    <!--/item-->
+					                    <div class="item">
+					                        <div class="row">
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book9.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book10.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book11.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                            <div class="col-sm-3 col-xs-6"><a href="#"><img src="img/books/book12.jpg" alt="Image" class="img-responsive"></a>
+					                            </div>
+					                        </div>
+					                        <!--/row-->
+					                    </div>
+					                    <!--/item-->
+					                </div>
+					                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel1" data-slide="prev">‹</a>
+
+					                <a class="right carousel-control" href="#myCarousel1" data-slide="next">›</a>
+					            </div>
+					            <!--/myCarousel-->
+					        </div>
+					        <!--/well-->
+					    </div>
+					</div>
+				</td>
+			<tr>
+		</table>
+
+	</section>
+	<!-- Owl Carousel -->
+	<section>
+		<h3 class="carousel-label">DVDs</h3>
+		<div id="owl-demo" class="owl-carousel owl-theme">
+		  <div class="item"><a href="#"><img src="img/dvd/goosebumps.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/home.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/jay.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/machina.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/hotel.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/avengers.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/minions.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/pixels.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/inside.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/blaurt.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/toystory.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/terminator.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/ant.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/andreas.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/tomorrow.jpg"></a></div>
+		  <div class="item"><a href="#"><img src="img/dvd/pitch.jpg"></a></div>
+		</div>
+		 
+		<div class="customNavigation">
+		  <a class="btn prev">Previous</a>
+		  <a class="btn next">Next</a>
+		</div>
+	</section>
+
+	<!-- Returns to Top of Screen -->
+	<h5 class="goUp">Back to Top</h5>
+
+	<!-- Money and Accounts Links -->
+	<table class="money-table">
+		<tr>
+			<td class="money col-sm-3">
+				<h4>Get to Know Us</h4>
+				<a href="#">Careers</a>
+				<a href="#">About Amazon</a>
+				<a href="#">Investor Relations</a>
+				<a href="#">Amazon Devices</a>
+			</td>
+			<td class="money col-sm-3">
+				<h4>Make Money with Us</h4>
+				<a href="#">Sell on Amazon</a>
+				<a href="#">Sell Your Services on Amazon</a>
+				<a href="#">Sell on Amazon Business</a>
+				<a href="#">Sell Your Apps on Amazon</a>
+				<a href="#">Become an Affiliate</a>
+				<a href="#">Advertise Your Products</a>
+				<a href="#">Self-Publish with Us</a>
+				<a href="#">Become an Amazon Vendor</a>
+			</td>
+			<td class="money col-sm-3">
+				<h4>Amazon Payment Products</h4>
+				<a href="#">Amazon.com Rewards Visa Card</a>
+				<a href="#">Amazon.com Store Card</a>
+				<a href="#">Amazon.com Corporate Credit Line</a>
+				<a href="#">Shop with Points</a>
+				<a href="#">Credit Card Marketplace</a>
+				<a href="#">Amazon Currency Converter</a>
+			</td>
+			<td class="money col-sm-3">
+				<h4>Let Us Help You</h4>
+				<a href="#">Your Account</a>
+				<a href="#">Your Orders</a>
+				<a href="#">Shipping Rates & Policies</a>
+				<a href="#">Amazon Prime</a>
+				<a href="#">Returns & Replacements</a>
+				<a href="#">Manage Your Content and Devices</a>
+				<a href="#">Amazon Assistant</a>
+				<a href="#">Help</a>
+			</td>
+		</tr>
+	</table>
+
+	<!-- Countries Section -->
+	<section class="mid-country">
+		<img src="img/amazon.jpg">
+		<div>
+			<a href="#">Australia</a>
+			<a href="#">Brazil</a>
+			<a href="#">Canada</a>
+			<a href="#">China</a>
+			<a href="#">France</a>
+			<a href="#">Germany</a>
+			<a href="#">India</a>
+			<a href="#">Italy</a>
+			<a href="#">Japan</a>
+			<a href="#">Mexico</a>
+			<a href="#">Netherlands</a>
+			<a href="#"> Spain</a>
+			<a href="#">United Kingdom</a>
+		</div>
+	</section>
+
+	<!-- Mini Table -->
+	<table class="business-table">
+		<tr class="business-row">
+			<td>
+				<a href="#" class="font-gray"><span class="blue">6pm</span>Score deals on fashion brands</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">AbeBooks</span>Rare Books & Textbooks</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">ACX</span>Audiobook Publishing Made Easy</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">AfterSchool.com</span>Kids Sports, Outdoor & Dance Gear</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Alexa</span>Actionable Analytics for the Web</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Amazon Business</span>Everything For Your Business</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Amazon Fresh</span>Groceries & More Right to Your Door</a>
+			</td>
+		</tr>
+		<tr class="business-row">
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Amazon Global</span>Ship Orders Internationally</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Home Services</span>Handpicked Pros Happiness Guarantee</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Amazon Web Services</span>Scalable Cloud Computing Services</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Audible</span>Download Audio Books</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">BeautyBar.com</span>Prestige Beauty Delivered</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Book Depository</span>Books With Free Delivery Worldwide</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Casa.com</span>Kitchen, Storage & Everything Home</a>
+			</td>
+		</tr>
+		<tr class="business-row">
+			<td>
+				<a href="#" class="font-gray"><span class="blue">ComiXology</span>Thousands of Digital Comics</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">CreateSpace</span>Indie Print Publishing Made Easy</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Diapers.com</span>Everything But The Baby</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">DPReview</span>Digital Photography</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">East Dane</span>Designer Men's Fashion</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Fabric</span>Sewing, Quitting & Knitting</a>
+			</td>
+			<td>
+				<a href="#" class="font-gray"><span class="blue">Goodreads</span>Book reviews & recommendations</a>
+			</td>
+		</tr>
+	</table>
+
+	<!-- Copyright Section -->
+	<div class="mid-country end-amazon">
+		<a href="#">Conditions of Use</a>
+		<a href="#">Privacy Notice</a>
+		<a href="#">Interest-Based Ads</a>
+		<p class="font-gray">&#169; Sky Jacobson</p>
+	</div>
+
+	<script src="js/main.js"></script>
+	<script>
+	$(document).ready(function() {
+ 
+	  var owl = $("#owl-demo");
+	 
+	  owl.owlCarousel({
+	      items : 8, //10 items above 1000px browser width
+	      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+	      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+	      itemsTablet: [600,2], //2 items between 600 and 0
+	      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+	  });
+	 
+	  // Custom Navigation Events
+	  $(".next").click(function(){
+	    owl.trigger('owl.next');
+	  })
+	  $(".prev").click(function(){
+	    owl.trigger('owl.prev');
+	  })
+	 
+	});
+	</script>
+	<script>
+		//Bootstrap Slider
+		$(document).ready(function() {
+		    $('#myCarousel').on('slid.bs.carousel', function() {
+		    	//alert("slid");
+			});
+			$('#myCarousel1').on('slid.bs.carousel', function() {
+		    	//alert("slid");
+			});
+		});
+	</script>
+
+</body>
+</html>
